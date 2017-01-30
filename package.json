@@ -1,0 +1,40 @@
+{
+  "name": "voice",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-jest": "^18.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-react-app": "^2.0.1",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "babel-runtime": "^6.22.0",
+    "react-scripts": "^0.8.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.3",
+    "natural": "^0.4.0",
+    "nlp_compromise": "^6.5.3",
+    "react": "^15.4.1",
+    "react-addons-perf": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-redux": "^5.0.1",
+    "redux": "^3.6.0",
+    "redux-actions": "^1.2.0",
+    "redux-devtools-extension": "^1.0.0",
+    "redux-logic": "^0.10.2",
+    "redux-stack": "^1.0.1",
+    "rxjs": "^5.0.2",
+    "uuid": "^3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

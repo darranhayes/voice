@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceRoot}\\start",
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach to Process",
+            "port": 5858
+        },
+        {
+            "name": "Debug Tests",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node.cmd",
+            "program": "${workspaceRoot}/node_modules/react-scripts/scripts/test.js",
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "stopOnEntry": false,
+            "args": [
+                "--runInBand",
+                "--env=jsdom"
+            ],
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "NODE_ENV": "development",
+                "CI": "true"
+            },
+            "console": "internalConsole",
+            "sourceMaps": false,
+            "outFiles": []    
+        }
+    ]
+}
